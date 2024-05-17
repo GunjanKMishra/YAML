@@ -1,0 +1,44 @@
+#.yaml or .yml both will work
+
+#key value pair
+app: user-authentication
+port: 8080
+version: 1.7
+
+#object
+database:
+  name: userdb
+  port: 3306
+  host: localhost
+
+#list
+servers:
+  - name: server1
+    ip: 0.0.0.0
+  - name: server2
+    ip: 1.2.1.2
+
+#nested object
+config:
+  server:
+    port: 8080
+    ip: 8.9.8.9.8
+
+#list of objects
+users:
+  - name: user1
+    age: 20
+  - name: user2
+    age: 30
+
+#multiline string
+
+description: |
+  This is a multiline string
+  which can be used to write
+  long description
+  or comments
+
+# environment variables
+
+env: ${ENVIRONMENT_VARIABLE}
